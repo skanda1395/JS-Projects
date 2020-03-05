@@ -1,7 +1,5 @@
 exports.palindrome = function(str) {
-  
   let pureStr = str.replace(/[\W_]/g, "").toLowerCase();
-  
   let l = pureStr.length;
   
   for (let i = 0, j = Math.floor(l / 2); i < j; i++) {
@@ -9,5 +7,4 @@ exports.palindrome = function(str) {
   }
   
   return "a palindrome";
-  
 }
